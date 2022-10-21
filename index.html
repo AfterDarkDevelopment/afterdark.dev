@@ -10,30 +10,62 @@
 			margin: 0;
 			background: black;
 			color: white;
+			overflow: hidden;
+		}
+
+		* {
+			font-family: 'Roboto', sans-serif;
+			z-index: 100;
 		}
 
 		.logo {
 			-webkit-animation: flicker 2s infinite;
 			text-align: left;
-			font-family: 'Roboto', sans-serif;
 			font-weight: 900;
-			font-size: 100px;
+			width: 100%;
 			margin: 0 !important;
-			padding: 0 15px;
-			border-bottom: 10px white solid
+			padding: 0 0;
+			border-bottom: 10px #4b6bde solid;
+			float: left;
+		}
+
+		.container {
+			margin: 0;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			width: 90%;
+			-ms-transform: translate(-50%, -50%);
+			transform: translate(-50%, -50%);
+			z-index: 100;
+		}
+
+		.nav {
+			-webkit-animation: flicker 2s infinite;
+			text-align: left;
+			font-weight: 900;
+			width: 100%;
+			margin: 0 !important;
+			padding: 5px 0;
+			float: left;
 		}
 
 		.text {
-			text-align: left;
+			text-align: center;
 			font-family: 'Roboto', sans-serif;
 			font-size: 1.2em;
 			margin: 0;
-			padding: 0 15px;
+			position: absolute;
+			bottom: 5%;
+			width: 100%;
+			z-index: 100;
 		}
 
 		.text p {
 			margin: 0;
 			padding: 0 15px;
+			width: auto;
+			z-index: 100;
 		}
 
 		@-webkit-keyframes flicker {
@@ -73,20 +105,311 @@
 			color: black;
 			margin-right: 15px;
 		}
+
+		svg {
+			width: 100%;
+			color: white;
+		}
+
+		scg text {
+			color: white;
+		}
+
+
+
+		.background span {
+			background: transparent;
+		}
+
+
+		.background {
+			width: 100vw;
+			height: 100vh;
+			background: #000;
+		}
+
+		.background span {
+			width: 20vmin;
+			height: 20vmin;
+			border-radius: 20vmin;
+			backface-visibility: hidden;
+			position: absolute;
+			animation-name: move;
+			animation-duration: 6s;
+			animation-timing-function: linear;
+			animation-iteration-count: infinite;
+		}
+
+		.background span:nth-child(1) {
+			color: #4b6bde;
+			background: transparent;
+			top: 71%;
+			left: 97%;
+			animation-duration: 15.2s;
+			animation-delay: -14.9s;
+			transform-origin: -21vw 2vh;
+			box-shadow: -40vmin 0 40.601292616vmin currentColor;
+		}
+
+		.background span:nth-child(2) {
+			color: #4b6bde;
+			background: transparent;
+			top: 89%;
+			left: 85%;
+			animation-duration: 12.1s;
+			animation-delay: -6.7s;
+			transform-origin: 4vw -21vh;
+			box-shadow: 40vmin 0 40.2525462811vmin currentColor;
+		}
+
+		.background span:nth-child(3) {
+			color: #61ff9b;
+			background: transparent;
+			top: 6%;
+			left: 99%;
+			animation-duration: 12.6s;
+			animation-delay: -5.5s;
+			transform-origin: 16vw 17vh;
+			box-shadow: -40vmin 0 40.1748283167vmin currentColor;
+		}
+
+		.background span:nth-child(4) {
+			color: #4b6bde;
+			background: transparent;
+			top: 50%;
+			left: 17%;
+			animation-duration: 13.4s;
+			animation-delay: -2.8s;
+			transform-origin: 19vw -17vh;
+			box-shadow: -40vmin 0 40.5946069196vmin currentColor;
+		}
+
+		.background span:nth-child(5) {
+			color: #61ff9b;
+			background: transparent;
+			top: 96%;
+			left: 73%;
+			animation-duration: 10.2s;
+			animation-delay: -1.4s;
+			transform-origin: 17vw 8vh;
+			box-shadow: 40vmin 0 40.7631138207vmin currentColor;
+		}
+
+		.background span:nth-child(6) {
+			color: #d14f3b;
+			background: transparent;
+			top: 94%;
+			left: 66%;
+			animation-duration: 13.6s;
+			animation-delay: -12.9s;
+			transform-origin: 24vw 17vh;
+			box-shadow: -40vmin 0 40.2128622628vmin currentColor;
+		}
+
+		.background span:nth-child(7) {
+			color: #61ff9b;
+			background: transparent;
+			top: 90%;
+			left: 87%;
+			animation-duration: 13.5s;
+			animation-delay: -5.5s;
+			transform-origin: 0vw 25vh;
+			box-shadow: 40vmin 0 40.1147264964vmin currentColor;
+		}
+
+		.background span:nth-child(8) {
+			color: #4b6bde;
+			background: transparent;
+			top: 35%;
+			left: 60%;
+			animation-duration: 13.9s;
+			animation-delay: -0.6s;
+			transform-origin: 19vw 13vh;
+			box-shadow: 40vmin 0 40.5868076728vmin currentColor;
+		}
+
+		.background span:nth-child(9) {
+			color: #d14f3b;
+			background: transparent;
+			top: 74%;
+			left: 6%;
+			animation-duration: 15.1s;
+			animation-delay: -1.3s;
+			transform-origin: -2vw -4vh;
+			box-shadow: 40vmin 0 40.6664030305vmin currentColor;
+		}
+
+		.background span:nth-child(10) {
+			color: #d14f3b;
+			background: transparent;
+			top: 67%;
+			left: 79%;
+			animation-duration: 14.9s;
+			animation-delay: -11.5s;
+			transform-origin: 3vw 11vh;
+			box-shadow: 40vmin 0 40.6323300124vmin currentColor;
+		}
+
+		.background span:nth-child(11) {
+			color: #61ff9b;
+			background: transparent;
+			top: 48%;
+			left: 9%;
+			animation-duration: 13.7s;
+			animation-delay: -9.8s;
+			transform-origin: -14vw 24vh;
+			box-shadow: 40vmin 0 40.4995814245vmin currentColor;
+		}
+
+		.background span:nth-child(12) {
+			color: #4b6bde;
+			background: transparent;
+			top: 7%;
+			left: 48%;
+			animation-duration: 10.2s;
+			animation-delay: -5.3s;
+			transform-origin: 8vw -4vh;
+			box-shadow: -40vmin 0 40.6034106409vmin currentColor;
+		}
+
+		.background span:nth-child(13) {
+			color: #4b6bde;
+			background: transparent;
+			top: 82%;
+			left: 57%;
+			animation-duration: 13.4s;
+			animation-delay: -1.7s;
+			transform-origin: -9vw 20vh;
+			box-shadow: 40vmin 0 40.2175195841vmin currentColor;
+		}
+
+		.background span:nth-child(14) {
+			color: #4b6bde;
+			background: transparent;
+			top: 30%;
+			left: 41%;
+			animation-duration: 11.8s;
+			animation-delay: -10.2s;
+			transform-origin: 15vw 5vh;
+			box-shadow: 40vmin 0 40.6313319141vmin currentColor;
+		}
+
+		.background span:nth-child(15) {
+			color: #d14f3b;
+			background: transparent;
+			top: 61%;
+			left: 14%;
+			animation-duration: 15.2s;
+			animation-delay: -2.5s;
+			transform-origin: -13vw -20vh;
+			box-shadow: 40vmin 0 40.3339454517vmin currentColor;
+		}
+
+		.background span:nth-child(16) {
+			color: #61ff9b;
+			background: transparent;
+			top: 87%;
+			left: 78%;
+			animation-duration: 12.3s;
+			animation-delay: -3.4s;
+			transform-origin: 18vw -4vh;
+			box-shadow: 40vmin 0 40.0439844999vmin currentColor;
+		}
+
+		.background span:nth-child(17) {
+			color: #d14f3b;
+			background: transparent;
+			top: 31%;
+			left: 85%;
+			animation-duration: 13s;
+			animation-delay: -4.6s;
+			transform-origin: 2vw 2vh;
+			box-shadow: 40vmin 0 40.1289863753vmin currentColor;
+		}
+
+		.background span:nth-child(18) {
+			color: #61ff9b;
+			background: transparent;
+			top: 85%;
+			left: 51%;
+			animation-duration: 12.5s;
+			animation-delay: -0.3s;
+			transform-origin: -13vw -23vh;
+			box-shadow: 40vmin 0 40.0051058782vmin currentColor;
+		}
+
+		.background span:nth-child(19) {
+			color: #d14f3b;
+			background: transparent;
+			top: 91%;
+			left: 51%;
+			animation-duration: 12.5s;
+			animation-delay: -8.1s;
+			transform-origin: 22vw 16vh;
+			box-shadow: -40vmin 0 40.5730633378vmin currentColor;
+		}
+
+		.background span:nth-child(20) {
+			color: #61ff9b;
+			background: transparent;
+			top: 96%;
+			left: 6%;
+			animation-duration: 13.4s;
+			animation-delay: -10.5s;
+			transform-origin: 1vw 6vh;
+			box-shadow: 40vmin 0 40.6857022888vmin currentColor;
+		}
+
+		@keyframes move {
+			100% {
+				transform: translate3d(0, 0, 1px) rotate(360deg);
+			}
+		}
 	</style>
 </head>
 
 <body>
-	<div class="logo">
-		AFTERDARK
+	<div class="container">
+		<div class="logo">
+			<svg viewBox="0 0 93 8">
+				<text x="0" y="15" fill="#d14f3b">AFTERDARK</text>
+			</svg>
+		</div>
+		<div class="nav">
+			<svg viewBox="0 0 93 18">
+				<text x="0" y="5" fill="#61ff9b">AFTERDARK</text>
+			</svg>
+		</div>
 	</div>
 	<br><br>
 	<div class="text">
 		<p><span>[PORTFOLIO]</span> <a href="https://liftkit.app">liftkit</a></p>
 		<br>
-		<p><span>[FOLLOW]</span> <a href="https://instagram.com/AfterDarkDevelopment">instagram</a></p>
+		<p><span>[CONTACT]</span> <a href="sms:9376685138">text us</a>, <a href="mail:afterdark@alecw.net">email us</a>, <a href="https://instagram.com/AfterDarkDevelopment">instagram</a></p>
 		<br>
-		<p><span>[CONTACT]</span> <a href="sms:9376685138">text us</a>, <a href="mailto:afterdark@alecw.net">email us</a></p>
+		<p>A DEVELOPMENT COMPANY;</p>
+	</div>
+	<div class="background">
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
 	</div>
 </body>
 
